@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Math</title>
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/utilites.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS -->
+</head>
+
+<body>
+    <div id="main_wrapper" class="container">
+        <div id="calculator_wrapper">
+            <div class="input_box center-col">
+                <div class="brand center-col">
+                    <h3>CASIO</h3>
+                    <div class="brand_speci center-col">
+                        <p>ELECTRONIC CALCULATOR</p>
+                        <p>HL-820LV</p>
+                    </div>
+                    <input id="input" type="text">
+                </div>
+            </div>
+            <br>
+            <div class="buttons center-col">
+
+                <div class="button_row center-row">
+                    <button class="button bg-dark bg-gradient fs-2">+</button>
+                    <button class="button bg-dark bg-gradient fs-2">-</button>
+                    <button class="button bg-dark bg-gradient fs-2">×</button>
+                </div>
+                <div class="button_row center-row">
+                    <button class="button bg-dark bg-gradient fs-2">÷</button>
+                    <button class="button bg-dark bg-gradient fs-2">.</button>
+                    <button class="button bg-danger bg-gradient">AC</button>
+                </div>
+                <div class="button_row center-row">
+                    <button class="button bg-dark bg-gradient">1</button>
+                    <button class="button bg-dark bg-gradient">2</button>
+                    <button class="button bg-dark bg-gradient">3</button>
+                </div>
+                <div class="button_row center-row">
+                    <button class="button bg-dark bg-gradient">4</button>
+                    <button class="button bg-dark bg-gradient">5</button>
+                    <button class="button bg-dark bg-gradient">6</button>
+                </div>
+                <div class="button_row center-row">
+                    <button class="button bg-dark bg-gradient">7</button>
+                    <button class="button bg-dark bg-gradient">8</button>
+                    <button class="button bg-dark bg-gradient">9</button>
+                </div>
+                <div class="button_row center-row">
+                    <button class="button bg-dark bg-gradient">0</button>
+                    <button class="button bg-dark bg-gradient">00</button>
+                    <button class="button bg-dark bg-gradient">=</button>
+                </div>
+
+
+            </div>
+            <!-- Buttons div end -->
+        </div>
+        <!-- calculator_wrapper -->
+
+
+        <!-- Brand Details -->
+        <div id="title">
+            <h1>Simple Calculator</h1>
+        </div>
+
+        <!-- Menu -->
+
+        <div id="menu">
+            <div class="menu-icon">
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./js/utilites.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- JavaScript -->
+</body>
+
+</html>

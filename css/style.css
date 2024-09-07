@@ -1,0 +1,152 @@
+/* font */
+
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*  */
+/* Custom Font */
+@font-face {
+    font-family: digital-font;
+    src: url(./fonts/digital-font/DigitalNormal-xO6j.otf);
+}
+
+/*  */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--body_color);
+    font-family: "Roboto", sans-serif;
+    
+}
+
+
+/* ******** Body CSS ********* */
+
+#main_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+
+    
+
+    #calculator_wrapper {
+        max-width: 330px;
+        background-color: var(--calculator_color);
+        border-radius: 20px;
+        padding: 10px;
+
+        /*  */
+        .input_box {
+            width: 90%;
+            height: 200px;
+            padding: 16px 0;
+            margin: auto;
+            box-sizing: border-box;
+
+            .brand {
+                color: white;
+                
+                .brand_speci{
+                    line-height:7px;
+                    padding-top: 10px;
+                    font-size: 16px;
+                }
+            }
+
+            input {
+                border-radius: 22px;
+                width: 100%;
+                height: 80px;
+                border: none;
+                font-size: 36px;
+                padding-left: 8px;
+                font-weight: 500;
+                background-color: #B3BC8E;
+                letter-spacing: 3px;
+                font-family: digital-font;
+
+            }
+
+            input:focus {
+                background-color: #B3BC8E;
+                border: none;
+            }
+
+
+        }
+
+        /*  */
+        .buttons {
+            flex-wrap: wrap;
+
+
+            .button_row {
+                width: 100%;
+                padding: 10px 0;
+                justify-content: space-around !important;
+            }
+
+            button {
+                width: 70px;
+                height: 40px;
+                border-radius: 18px;
+                border: none;
+                font-size: 25px;
+                cursor: pointer;
+                color: #fff;
+                text-align: center;
+                font-weight: 600;
+
+            }
+        }
+    }
+
+    /* #calculator_wrapper  */
+
+    #title {
+        position: absolute;
+        top: 18px;
+    }
+
+    #menu {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            width: 35px;
+            height: 5px;
+            background-color: #333;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+        .change .bar1 {
+            transform: translate(0, 11px) rotate(-45deg);
+        }
+
+        .change .bar2 {
+            opacity: 0;
+        }
+
+        .change .bar3 {
+            transform: translate(0, -11px) rotate(45deg);
+        }
+    }
+
+
+}

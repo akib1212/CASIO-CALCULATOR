@@ -1,0 +1,28 @@
+
+
+/* Color holder */
+:root{
+    --body_color:#EBF4F6;
+    --calculator_color:#4B4155;
+}
+
+
+
+
+/* Utilites Classes */
+.center-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.border{
+    border: 2px solid white;
+}
